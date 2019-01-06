@@ -167,14 +167,22 @@
                 </div>
             </div>
             <div class="rune-panel-divider"></div>
-            <div>
-                <span data-lang="selected">已选：</span>
-                <span id="runeCost">0</span>
-            </div>
-            <div>
-                <span data-lang="currentselected">本次：</span>
-                <span id="runeCheckCost">0</span>
-            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" data-lang="selected">已选</th>
+                    </tr>
+                </thead>
+                <tbody id="runeCost"></tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" data-lang="currentselected">本次</th>
+                    </tr>
+                </thead>
+                <tbody id="runeCheckCost"></tbody>
+            </table>
             <div class="row justify-content-end">
                 <div class="btn-group">
                     <button type="button" class="btn btn-outline-secondary" id="btnSaveImage" data-lang="saveimage">生成全符文图片</button>

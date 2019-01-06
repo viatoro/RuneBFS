@@ -1,5 +1,5 @@
 {
-  "name": "RuneBFS",
+  "name": "rune_bfs",
   "version": "1.0.0",
   "description": "ROMEL Rune Breadth-First-Search",
   "main": "index.js",

@@ -91,7 +91,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"jsondata","6":"view"}[chunkId]||chunkId) + "." + {"0":"f77111604fd5a7a8389a","1":"e9b0fe9212a91830854c","2":"6b03134ba177c9b5d071","3":"97450e8ed1a3eb3a89c4","4":"dc58c0d26295faf6d8f2","5":"60912cb74671f6888739","6":"303be11d1ca9babe673c"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"jsondata","6":"view"}[chunkId]||chunkId) + "." + {"0":"f77111604fd5a7a8389a","1":"e9b0fe9212a91830854c","2":"6b03134ba177c9b5d071","3":"97450e8ed1a3eb3a89c4","4":"dc58c0d26295faf6d8f2","5":"60912cb74671f6888739","6":"9f1f0866b630ed8c871a"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -12689,7 +12689,7 @@ data["algorithm-custom"] = { "ja-JP": "カスタム", "zh-TW": "自定義", "en-
 data["weight"] = { "ja-JP": "比重", "zh-TW": "權重", "en-US": "Weights", "zh-CN": "权重" };
 data["contribution"] = { "ja-JP": "貢献", "zh-TW": "貢獻", "en-US": "Contribution", "zh-CN": "贡献" };
 data["goldmedal"] = { "ja-JP": "金盾", "zh-TW": "金質勳章", "en-US": "Golden Medal", "zh-CN": "金质勋章" };
-data["selected"] = { "ja-JP": "保存済：", "zh-TW": "已選：", "en-US": "Selected:", "zh-CN": "已选：" };
+data["selected"] = { "ja-JP": "保存済：", "zh-TW": "已選：", "en-US": "Saved:", "zh-CN": "已选：" };
 data["currentselected"] = { "ja-JP": "現選択：", "zh-TW": "本次：", "en-US": "Current:", "zh-CN": "本次：" };
 data["saveimage"] = { "ja-JP": "画像生成", "zh-TW": "生成全符文圖片", "en-US": "Generate all rune image", "zh-CN": "生成全符文图片" };
 data["reset"] = { "ja-JP": "選択リセット", "zh-TW": "重置本次選擇", "en-US": "Reset current selected", "zh-CN": "重置本次选择" };

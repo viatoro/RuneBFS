@@ -431,11 +431,11 @@ var renderCost = function () {
     }, {});
     var runeCheckCostText = "";
     __WEBPACK_IMPORTED_MODULE_1_underscore___default.a.each(runeCheckCost, function (o, i) {
-        runeCheckCostText += i + "*" + o + " ";
+        runeCheckCostText += "<tr><td>" + i + "</td><td>" + o + "</td></tr>";
     })
     var runeCostText = "";
     __WEBPACK_IMPORTED_MODULE_1_underscore___default.a.each(runeCost, function (o, i) {
-        runeCostText += i + "*" + o + " ";
+        runeCostText += "<tr><td>" + i + "</td><td>" + o + "</td></tr>";
     })
     runeCheckResetCost = __WEBPACK_IMPORTED_MODULE_1_underscore___default.a.reduce(runeCheckResetCost, function (memo, item) {
         __WEBPACK_IMPORTED_MODULE_1_underscore___default.a.each(item, function (o, i) {
@@ -451,11 +451,11 @@ var renderCost = function () {
     }, {});
     var runeCheckResetCostText = "";
     __WEBPACK_IMPORTED_MODULE_1_underscore___default.a.each(runeCheckResetCost, function (o, i) {
-        runeCheckResetCostText += i + "*" + o + " ";
+        runeCheckResetCostText += "<tr><td>" + i + "</td><td>" + o + "</td></tr>";
     })
     var runeResetCostText = "";
     __WEBPACK_IMPORTED_MODULE_1_underscore___default.a.each(runeResetCost, function (o, i) {
-        runeResetCostText += i + "*" + o + " ";
+        runeResetCostText += "<tr><td>" + i + "</td><td>" + o + "</td></tr>";
     })
     runeCheckTotalAttr = __WEBPACK_IMPORTED_MODULE_1_underscore___default.a.reduce(runeCheckTotalAttr, function (memo, o) {
         if (!o || !o.Key) { return memo; }
@@ -472,26 +472,26 @@ var renderCost = function () {
     var index = 0;
     __WEBPACK_IMPORTED_MODULE_1_underscore___default.a.each(runeCheckTotalAttr, function (o, i) {
         index++;
-        runeCheckTotalAttrText += __WEBPACK_IMPORTED_MODULE_2__ui_js__["a" /* default */].getEquipEffect(i) + "+" + Math.round(o * 100) / 100 + " ";
-        if (index % 4 == 0) { runeCheckTotalAttrText += "<br/>"; }
+        runeCheckTotalAttrText += "<tr><td>" + __WEBPACK_IMPORTED_MODULE_2__ui_js__["a" /* default */].getEquipEffect(i) + "</td><td>+" + Math.round(o * 100) / 100 + "</td></tr>";
+        //if (index % 4 == 0) { runeCheckTotalAttrText += "<br/>"; }
     })
     var runeTotalAttrText = "";
     index = 0;
     __WEBPACK_IMPORTED_MODULE_1_underscore___default.a.each(runeTotalAttr, function (o, i) {
         index++;
-        runeTotalAttrText += __WEBPACK_IMPORTED_MODULE_2__ui_js__["a" /* default */].getEquipEffect(i) + "+" + Math.round(o * 100) / 100 + " ";
-        if (index % 4 == 0) { runeTotalAttrText += "<br/>"; }
+        runeTotalAttrText += "<tr><td>" + __WEBPACK_IMPORTED_MODULE_2__ui_js__["a" /* default */].getEquipEffect(i) + "</td><td>+" + Math.round(o * 100) / 100 + "</td></tr>";
+        //if (index % 4 == 0) { runeTotalAttrText += "<br/>"; }
     })
     __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#runeCheckCost').empty()
         .append(runeCheckCostText.trim()
-            + "(" + runeCheckResetCostText.trim() + ")"
-            + '<br/>' + runeCheckTotalAttrText.trim());
-    __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#runeCheckCost').data('cost', runeCheckCostText.trim() + "(" + runeCheckResetCostText.trim() + ")");
+            + runeCheckResetCostText.trim()
+            + runeCheckTotalAttrText.trim());
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#runeCheckCost').data('cost', runeCheckCostText.trim() + runeCheckResetCostText.trim());
     __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#runeCost').empty()
         .append(runeCostText.trim()
-            + "(" + runeResetCostText.trim() + ")"
-            + '<br/>' + runeTotalAttrText.trim());
-    __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#runeCost').data('cost', runeCostText.trim() + "(" + runeResetCostText.trim() + ")");
+            + runeResetCostText.trim()
+            + runeTotalAttrText.trim());
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#runeCost').data('cost', runeCostText.trim() + runeResetCostText.trim());
 };
 
 var runeClick = function (runeId) {
