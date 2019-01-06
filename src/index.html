@@ -167,15 +167,7 @@
                 </div>
             </div>
             <div class="rune-panel-divider"></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2" data-lang="selected">已选</th>
-                    </tr>
-                </thead>
-                <tbody id="runeCost"></tbody>
-            </table>
-            <table>
+            <table class="rune-data-table">
                 <thead>
                     <tr>
                         <th colspan="2" data-lang="currentselected">本次</th>
@@ -183,6 +175,15 @@
                 </thead>
                 <tbody id="runeCheckCost"></tbody>
             </table>
+            <table class="rune-data-table">
+                <thead>
+                    <tr>
+                        <th colspan="2" data-lang="selected">已选</th>
+                    </tr>
+                </thead>
+                <tbody id="runeCost"></tbody>
+            </table>
+            
             <div class="row justify-content-end">
                 <div class="btn-group">
                     <button type="button" class="btn btn-outline-secondary" id="btnSaveImage" data-lang="saveimage">生成全符文图片</button>

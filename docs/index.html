@@ -9,7 +9,7 @@
     <title>ROMEL Rune BFS</title>
     <meta name="description" content="仙境传说：守护永恒的爱 阿萨神碑加点模拟器;ROMEL Rune Breadth-First-Search." />
     <meta name="keywords" content="仙境传说,守护永恒的爱,阿萨神碑,符文,碑文,加点,RuneBFS,ForeverLove,仙境傳說,守護永恆的愛">
-<link href="main.514a4c860d39f93a541e29e2a7827bca.css" rel="stylesheet"></head>
+<link href="main.7db1c09ca46a88a7e77dc4522674aa3e.css" rel="stylesheet"></head>
 
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -167,15 +167,7 @@
                 </div>
             </div>
             <div class="rune-panel-divider"></div>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2" data-lang="selected">已选</th>
-                    </tr>
-                </thead>
-                <tbody id="runeCost"></tbody>
-            </table>
-            <table>
+            <table class="rune-data-table">
                 <thead>
                     <tr>
                         <th colspan="2" data-lang="currentselected">本次</th>
@@ -183,6 +175,15 @@
                 </thead>
                 <tbody id="runeCheckCost"></tbody>
             </table>
+            <table class="rune-data-table">
+                <thead>
+                    <tr>
+                        <th colspan="2" data-lang="selected">已选</th>
+                    </tr>
+                </thead>
+                <tbody id="runeCost"></tbody>
+            </table>
+            
             <div class="row justify-content-end">
                 <div class="btn-group">
                     <button type="button" class="btn btn-outline-secondary" id="btnSaveImage" data-lang="saveimage">生成全符文图片</button>

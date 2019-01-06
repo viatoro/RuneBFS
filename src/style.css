@@ -202,3 +202,9 @@ button.close {
 .noUi-connect {
     background: #337ab7;
 }
+
+.rune-data-table {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
