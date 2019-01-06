@@ -193,7 +193,7 @@ var render = function (id, savedata) {
                 '<ul class="list-group list-group-flush">' +
                 '<li class="list-group-item p-1">' + (desc.Desc || "") + '</li>' +
                 '<li class="list-group-item p-1">' + _.reduce(cost, function (result, current) {
-                    return result + current.Name + "*" + current.Count + " ";
+                    return result + current.Name + ": " + current.Count + "&nbsp;&nbsp;&nbsp;";
                 }, "") + '</li>' + '</ul>')
             .click(function () {
                 runeClick(o.Id);
@@ -321,7 +321,7 @@ var renderRuneLink = function () {
     linkcontext.fillText($('#runeCost').data('cost'), 0, runeLinkHeight - 35);
     linkcontext.font = "25px Consolas";
     linkcontext.textAlign = "right";
-    linkcontext.fillText("ROMEL Rune BFS", runeLinkWidth, runeLinkHeight - 35);
+    linkcontext.fillText("ROMEL Rune Calc", runeLinkWidth, runeLinkHeight - 35);
     linkcontext.fillText("Version:" + Data.getVersion(), runeLinkWidth, runeLinkHeight - 5);
     _.each(Data.getAstrolabe(), function (o, i) {
         var runeData = o;
